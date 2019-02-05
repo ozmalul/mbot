@@ -5,15 +5,15 @@ void setup(){
 }
 void loop(){
   int distance = ultraSensor.distanceCm();
-  Serial.print("Distance : ");
+[
   Serial.print(distance);
-  Serial.println(" cm");
+  
   delay(100); /* the minimal measure interval is 100 milliseconds */
   if(distance > 30){
-      Serial.print("far ");    
+      Serial.println(" - far");    
   }
   else{
     
-      Serial.print("close ");
+      Serial.print(" - close");
   }
 }
